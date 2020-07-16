@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "ParaReader",
+  "version": "1.0",
+
+  "description": "Read the selected text comfortably",
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "background": {
+    "scripts": ["reader-bg.js"]
+  },
+
+  "commands": {
+    "toggle-feature": {
+      "suggested_key": { "default": "Ctrl+Shift+X" },
+      "description": "Send a 'toggle-feature' event to the extension"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["tingle.min.js", "reader.js"],
+      "css": ["tingle.css"]
+    }
+  ]
+
+}
+
