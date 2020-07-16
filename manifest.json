@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
   "name": "ParaReader",
-  "version": "1.0",
+  "version": "0.1",
 
-  "description": "Read the selected text comfortably",
+  "description": "Read selected text comfortably",
 
   "permissions": [
     "activeTab"
