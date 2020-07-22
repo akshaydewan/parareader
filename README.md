@@ -4,6 +4,9 @@
 
 This is a firefox extension that opens a modal to read the selected text with better formatting. I made it for reading emails and text that are otherwise not compatible with firefox's in-built Reader mode. 
 
+## Installation
+Get it from: [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/parareader/)
+
 ## Usage
 Select some text, and press Cmd+Shift+X on MacOS or Alt+Shift+X on Windows/Linux.
 
