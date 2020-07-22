@@ -8,15 +8,16 @@ browser.runtime.onMessage.addListener(request => {
   var modal = new tingle.modal({
     closeMethods: ['overlay', 'escape'],
     closeLabel: "Close",
-    onOpen: function() {
+    onOpen: function () {
       modalIsOpen = true;
     },
-    onClose: function() {
+    onClose: function () {
       modalIsOpen = false;
     },
   });
 
-  modal.setContent(`<p style="line-height: 2em">${selObj}</p>`);
+  var text = selObj.toString().replaceAll("\n", "<br/>");
+  modal.setContent(`<p class="para-reader_readable">${text}</p>`);
   modal.open();
   return Promise.resolve({});
 });

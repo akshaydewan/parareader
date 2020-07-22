@@ -15,7 +15,10 @@
 
   "commands": {
     "toggle-feature": {
-      "suggested_key": { "default": "Ctrl+Shift+X" },
+      "suggested_key": {
+        "default": "Alt+Shift+X",
+        "mac": "Ctrl+Shift+X"
+      },
       "description": "Send a 'toggle-feature' event to the extension"
     }
   },
@@ -24,7 +27,7 @@
     {
       "matches": ["<all_urls>"],
       "js": ["tingle.js", "reader.js"],
-      "css": ["tingle.css"]
+      "css": ["tingle.css", "reader.css"]
     }
   ]
 
